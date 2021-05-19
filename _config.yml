@@ -276,7 +276,23 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
+      read_time: false # 읽는 시간
+      comments: true # 블로그 댓글 기능
+      share: false
       related: true
+      toc: true
+      toc_sticky: true
+      sidebar_main: true
+
+  # _pages (새로 추가한 부분)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true 
+      read_time: false
+      comments: false
+      share: false # 공유하기 기능
+      related: false
+      sidebar_main: true
