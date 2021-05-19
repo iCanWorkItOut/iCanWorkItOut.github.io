@@ -94,15 +94,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "코딩하는 포카칩" # 좌측 프로필에 이름표기
+  avatar           : "/assets/images/favicon.ico/favicon.svg" # 이미지파일 path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "돌아온만큼 누구보다 열심히.<br>취미로 코딩하는 개발자를 향해서" # 자기소개
+  location         : "서울사는 천안사람" # 지역
   email            :
   links:
-    - label: "Email"
+    - label: "icanworkitout@daum.net" # "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:icanworkitout@daum.net"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/icanworkitout"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
