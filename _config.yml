@@ -15,17 +15,17 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "ko-KR" #언어-지역
+title                    : "Minimum 1Day 1Commit" # 블로그 제목
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+subtitle                 : "Never stop. Even if go slowly, keep going." # site tagline that appears below site title in masthead
+name                     : "pocachip@kakao.com" # 마크다운 {{site.name}}으로 사용 가능. 최하단에 표기 됨
+description              : "Pocachip's blog"
+url                      : "https://icanworkitout.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # 서브경로 : the subpath of your site, e.g. "/blog"
+repository               : "iCanWorkItOut/blog_comments" # "iCanWorkItOut/icanworkitout.github.io" # 블로그 리포지토리 주소(앞에 github.com 생략) GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # 이미지파일 경로 path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # 최상단 메뉴 바에 사이트 로고 넣기 path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
