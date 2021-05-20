@@ -44,6 +44,13 @@
                 {% endfor %}
             </ul>
       </li>
-
+      <!-- 방문자수
+            BORDER : ROUND(flat, round)
+            Title BG Color : #AAAAAA
+            Icon Color : #EEEEEE
+            Title : 방문자
+            Count BG Color : #AAAAFF
+        -->
+      <img style="width: auto;" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ficanworkitout.github.io&count_bg=%23AAAAFF&title_bg=%23AAAAAA&icon=iconify.svg&icon_color=%23EEEEEE&title=방문자&edge_flat=false" alt="visitors">
   </ul>
 </nav>
