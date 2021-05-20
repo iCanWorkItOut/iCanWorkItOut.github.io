@@ -52,8 +52,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default) 검색기능설정 (search_full_content 활성화 할 경우 세부 검색 가능한 듯 / 비활성화와 차이 못 찾음)
+search_full_content      : # true, false (default) true로 설정할 경우 페이지 로드 성능에 영향을 미칠 수 있음.
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
