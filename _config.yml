@@ -25,7 +25,7 @@ url                      : "https://icanworkitout.github.io" # the base hostname
 baseurl                  : # 서브경로 : the subpath of your site, e.g. "/blog"
 repository               : "iCanWorkItOut/blog_comments" # "iCanWorkItOut/icanworkitout.github.io" # 블로그 리포지토리 주소(앞에 github.com 생략) GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # 이미지파일 경로 path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # 최상단 메뉴 바에 사이트 로고 넣기 path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "assets/images/favicon.ico/favicon.png" # 최상단 메뉴 바에 사이트 로고 넣기 path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Minimum 1Day 1Commit" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
