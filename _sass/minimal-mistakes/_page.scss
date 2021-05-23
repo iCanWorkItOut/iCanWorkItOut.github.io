@@ -333,6 +333,10 @@ body {
     color: $link-color-hover;
   }
 }
+// 카테고리 테두리
+.page__taxonomy-item-category {
+  border: 1px solid #000;
+}
 
 .taxonomy__section {
   margin-bottom: 2em;
