@@ -9,7 +9,7 @@ $muted-text-color: #393e46 !default; // archive__subtitle
 $primary-color: #84DEEA !default;
 $border-color: #3cccdf; // mix(#fff, #393e46, 75%) !default; /* 보더라인(테두리) */
 $footer-background-color: $primary-color !default;
-$link-color: #393e46 !default; // archive__post-title
+$link-color: mix(#fff, #393e46, 10%) !default; // #393e46 !default; // archive__post-title
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
