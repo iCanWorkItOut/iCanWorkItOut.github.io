@@ -525,7 +525,7 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: initial; // uppercase; // 대문자->첫글자 대문자로 변경
   border-bottom: 1px solid $border-color;
 }
 
