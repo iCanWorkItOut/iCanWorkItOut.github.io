@@ -504,12 +504,12 @@ body {
   }
 }
 
-/* utterances 속성 추가 */
+/* utterances 속성 추가 */ 
 .utterances {
-  max-width: 100% !important;
-  background-color: red !important;
+  max-width: 10% !important;
+  // background-color: red !important;
 }
-.utterances-frame {
+.utterances-frame .timeline {
   background-color: red !important;
 }
 
