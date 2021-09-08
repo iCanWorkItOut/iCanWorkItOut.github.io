@@ -23,14 +23,14 @@ name                     : "pocachip@kakao.com" # 마크다운 {{site.name}}으�
 description              : "Pocachip's blog"
 url                      : "https://icanworkitout.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # 서브경로 : the subpath of your site, e.g. "/blog"
-repository               : "iCanWorkItOut/blog_comments" # "iCanWorkItOut/icanworkitout.github.io" # 블로그 리포지토리 주소(앞에 github.com 생략) GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "iCanWorkItOut/blog-comments" # "iCanWorkItOut/icanworkitout.github.io" # 블로그 리포지토리 주소(앞에 github.com 생략) GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # 이미지파일 경로 path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/favicon.ico/favicon.png" # 최상단 메뉴 바에 사이트 로고 넣기 path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Minimum 1Day 1Commit" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "utterances" # 블로그 댓글 기능 false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -41,8 +41,8 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "boxy-light" # "github-light", "github-dark", "preferred-color-scheme", "github-dark-orange", "icy-dark", "dark-blue", "photon-dark", "boxy-light" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname", "url", "title", "og:title" # "pathname" (default)
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
