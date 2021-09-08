@@ -508,29 +508,29 @@ body {
 .utterances {
   max-width: 100% !important;
   .timeline-comment .new-comment-header {
-    background-color: #C2EFF5;
-    border: 0.1px solid #3cccdf;
+    background-color: #C2EFF5 !important;
+    border: 0.1px solid #3cccdf !important;
   }
   .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current=false]), .tabnav-tab[aria-selected=true] {
-    background-color: #eee;
-    border: 0.1px solid #3cccdf;
-    border-bottom: none;
+    background-color: #eee !important;
+    border: 0.1px solid #3cccdf !important;
+    border-bottom: none !important;
   }
   .timeline-comment .comment-body {
-    background-color: #eee;
-    border: 0.1px solid #3cccdf;
-    border-bottom: none;
+    background-color: #eee !important;
+    border: 0.1px solid #3cccdf !important;
+    border-bottom: none !important;
   }
   /*.timeline-comment .comment-body .markdown-body, .timeline-comment .comment-body textarea {
     background-color: #fff;
   }*/
   .timeline-comment .new-comment-footer {
-    background-color: #eee;
-    border: 0.1px solid #3cccdf;
-    border-top: none;
+    background-color: #eee !important;
+    border: 0.1px solid #3cccdf !important;
+    border-top: none !important;
   }
   .btn-primary {
-    background-color: #3cccdf;
+    background-color: #3cccdf !important;
   }
 }
 
