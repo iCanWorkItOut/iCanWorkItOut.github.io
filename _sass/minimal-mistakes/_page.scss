@@ -508,25 +508,30 @@ body {
 .utterances {
   max-width: 100% !important;
 }
-.utterances-frame .timeline .timeline-comment .comment::before {
-  border-style: none !important;
-}
-.utterances-frame .timeline .timeline-comment .comment .new-comment-header {
+// .utterances-frame .timeline .timeline-comment .comment::before {
+//   border-style: none !important;
+// }
+
+// .utterances-frame 
+.timeline .timeline-comment .comment .new-comment-header {
   background-color: #C2EFF5 !important;
   border: 0.1px solid #3CCCDF !important;  
 }
-.utterances-frame .timeline .timeline-comment .comment .new-comment-header .tabnav-tab[aria-selected="true"] {
+// .utterances-frame 
+.timeline .timeline-comment .comment .new-comment-header .tabnav-tab[aria-selected="true"] {
   background-color: #EEEEEE !important;
   border: 0.1px solid #3cccdf !important;
   border-bottom: none !important;
 }
-.utterances-frame .timeline .timeline-comment .comment .comment-body {
+// .utterances-frame .timeline 
+.timeline-comment .comment .comment-body {
   background-color: #eee !important;
   border: 0.1px solid #3cccdf !important;
   border-top: none !important;
   border-bottom: none !important;
 }
-.utterances-frame .timeline .timeline-comment .comment .new-comment-footer {
+// .utterances-frame .timeline 
+.timeline-comment .comment .new-comment-footer {
   background-color: #eee !important;
   border: 0.1px solid #3cccdf !important;
   border-top: none !important;
