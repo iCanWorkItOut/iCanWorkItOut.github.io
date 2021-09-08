@@ -17,8 +17,8 @@
   font-family: $global-font-family;
   font-size: $type-size-6 !important;
   text-indent: initial; /* override*/
-  background-color: mix($background-color, $notice-color, $notice-background-mix);
-  border-radius: $border-radius;
+  background-color: mix(#fff, $notice-color, 50%); // mix($background-color, $notice-color, $notice-background-mix);
+  border-radius: 10px; // $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 
   h4 {
@@ -102,4 +102,12 @@
 
 .notice--danger {
   @include notice($danger-color);
+}
+
+/* Custom notice */
+
+.notice--custom {
+  @include notice(#84deea);
+  line-height: 1.75;
+  text-align: center;
 }
