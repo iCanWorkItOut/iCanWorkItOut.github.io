@@ -1,45 +1,54 @@
-<!--첫 번째 문단-->
-{% assign cat = page.categories[0] %}
-{% assign cat_list = site.categories[cat] %}
-{% for post in cat_list %}
+<!-- 같은 카테고리 내 이전 포스트와 다음 포스트를 변수에 저장 -->
+{% assign category = page.categories[0] %}
+{% assign categories = site.categories[category] %}
+{% for post in categories %}
   {% if post.url == page.url %}
   	{% assign prevIndex = forloop.index0 | minus: 1 %}
   	{% assign nextIndex = forloop.index0 | plus: 1 %}
   	{% if forloop.first == false %}
-  	  {% assign next_post = cat_list[prevIndex] %}
+  	  {% assign next_post = categories[prevIndex] %}
   	{% endif %}
   	{% if forloop.last == false %}
-  	  {% assign prev_post = cat_list[nextIndex] %}
+  	  {% assign prev_post = categories[nextIndex] %}
   	{% endif %}
   	{% break %}
   {% endif %}
 {% endfor %}
 
-<!--두 번째 문단 -->
-<!-- /_sass/_navigation.scss
-  167line .pagination_prev_next  -->
-{% if prev_post or next_post %}
-  <p><span>{{cat}}</span> 카테고리 내 다른 글 보러가기</p>
-  <nav class="pagination_prev_next">
+<!-- prev_post, next_post 존재 여부에 따른 html 영역과 텍스트 표시 -->
+<!-- /_sass/_navigation.scss 에서 style 설정 (.pagination_prev_next) -->
+<nav class="pagination-prev-next">
+  {% if prev_post or next_post %}
+    <div class="pagination__header">
+      <a href="/categories/{{category}}" class="category">{{category}}</a> 카테고리 내 다른 글 보러가기
+    </div>
     {% if prev_post %}
-      <a href="{{ prev_post.url }}" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>{{ prev_post.title }}</a>
+      <div class="pagination-prev-next--pager">
+        <a href="{{ prev_post.url }}"><span class="anno">이전 글 &nbsp</span>{{ prev_post.title }}</a>
+      </div>
     {% else %}
-      <a href="#" class="pagination_prev_next--pager disabled">첫 번째 글입니다</a>
+      <div class="pagination-prev-next--pager">
+        <span class="disabled">첫 번째 글입니다.</span>
+      </div>
     {% endif %}
     {% if next_post %}
-      <a href="{{ next_post.url }}" class="pagination_prev_next--pager"><span class="prev_next">다음 글  &nbsp  </span>{{ next_post.title }}</a>
+      <div class="pagination-prev-next--pager">
+        <a href="{{ next_post.url }}"><span class="anno">다음 글 &nbsp</span>{{ next_post.title }}</a>
+      </div>
     {% else %}
-      <a href="#" class="pagination_prev_next--pager disabled">가장 최근 글입니다</a>
+      <div class="pagination-prev-next--pager">
+        <span class="disabled">가장 최근 글입니다.</span>
+      </div>
     {% endif %}
-  </nav>
-{% else %}
-  <nav class="pagination_prev_next">
-    <a href="#" class="pagination_prev_next--pager disabled"><span class="prev_next">{{cat}} &nbsp</span>관련 카테고리 글이 없습니다</a>
-  </nav>
-{% endif %}
+  {% else %}
+    <div class="pagination__header">
+      <a href="/categories/{{category}}" class="category">{{category}}</a> 관련 카테고리 글이 없습니다.
+    </div>
+  {% endif %}
+</nav>
 
-
-<!-- 두 번째 문단 기본 수정
+<!-- Default -->
+<!--
 {% if prev_post or next_post %}
   <nav class="pagination">
     {% if prev_post %}

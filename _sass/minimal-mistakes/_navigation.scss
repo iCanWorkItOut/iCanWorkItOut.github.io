@@ -164,32 +164,41 @@
   border-top: 1px solid $border-color;
 }
 
-// 이전 글, 다음 글 클래스 추가 (167~195 line)
-.pagination_prev_next {
+/* post_pagination.html : prev_post, next_post */
+.pagination-prev-next {
   @include clearfix();
-  float: left;
+  // float: left;
   width: 100%;
+  border: 1px solid #3cccdf;
+  border-radius: $border-radius;
+  background-color: #84DEEA;
+  text-align: center;
+  box-sizing: border-box;
+
+  .pagination__header {
+    margin: 0;
+    padding: 0.2em;
+    color: $muted-text-color;
+    box-sizing: border-box;
+    .category {
+      color: #fff;
+    }
+  }
 
   /* next/previous buttons */
   &--pager {
-    margin-top: 0em;
-    padding-top: 0em;
-    display: block;
-    padding: 1em 2em;
-    //float: left;
-    width: 100%;
-    font-family: $sans-serif;
-    font-size: $type-size-5;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
+    margin: 0;
+    padding: 0.2em;
+    background-color: #eee;
     color: $muted-text-color;
-    border: 1px solid mix(#000, $border-color, 25%);
-    border-radius: $border-radius;
-
-    .prev_next {
-      //font-family: $cute;
-      color:#ffd861;
+    border-top: 1px solid #3cccdf;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    .anno {
+      color:#3cccdf;
+    }
+    .disabled {
+      color: mix(#fff, $muted-text-color, 50%);
     }
   }
 }
