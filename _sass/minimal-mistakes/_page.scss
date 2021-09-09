@@ -56,12 +56,21 @@ body {
     clear: both;
 
     .page__content,
-    .page__meta,
     .page__share {
       position: relative;
       float: left;
       margin-left: 0;
       margin-right: 0;
+      width: 100%;
+      clear: both;
+    }
+
+    // .page__content, .page__share 과 분리
+    .page__meta {
+      position: relative;
+      float: left;
+      margin: 0;
+      margin-bottom: 1em;
       width: 100%;
       clear: both;
     }
@@ -323,14 +332,17 @@ body {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 8px;
-  padding: 5px 10px;
+  padding: 0 5px; // 5px 10px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
+  border: 1px solid $primary-color; // mix(#000, $border-color, 25%);
   border-radius: $border-radius;
 
   &:hover {
     text-decoration: none;
     color: $link-color-hover;
+
+    transition: 0s;
+    background-color: #84DEEA;
   }
 }
 // 카테고리 테두리
