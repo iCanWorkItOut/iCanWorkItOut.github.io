@@ -120,6 +120,19 @@
   }
 }
 
+/* archive__taxonomy-item 추가 */
+.archive__taxonomy-item {
+  box-sizing: border-box;
+  margin-right: 7px;
+
+  &:hover {
+    transition: 0;
+    text-underline-position: auto;
+    font-weight: bold;
+  }
+}
+
+
 /*
    List view
    ========================================================================== */

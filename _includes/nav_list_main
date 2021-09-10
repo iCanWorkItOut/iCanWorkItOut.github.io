@@ -208,7 +208,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "VS Code" %}
-                        <li><a href="/categories/vs_code" class="">VS Code ({{category[1].size}})</a></li>
+                        <li><a href="/categories/vs-code" class="">VS Code ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

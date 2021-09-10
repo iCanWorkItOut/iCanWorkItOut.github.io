@@ -1,6 +1,6 @@
 ---
 title: "Visual Studio Code"
-permalink: /categories/vs_code
+permalink: /categories/vs-code
 layout: category
 sidebar_main: true
 ---
