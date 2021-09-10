@@ -237,6 +237,7 @@
 
     &.site-title {
       margin-left: 0;
+      margin-right: 300px; // 뷰포트 축소 시(모바일 스크린) menu-item 지우기 위해 추가
     }
   }
   
