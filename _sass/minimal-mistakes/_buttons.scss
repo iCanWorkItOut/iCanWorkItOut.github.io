@@ -39,7 +39,10 @@
   (info, $info-color),
   (facebook, $facebook-color),
   (twitter, $twitter-color),
-  (linkedin, $linkedin-color);
+  (linkedin, $linkedin-color),
+  (custom, $primary-color), // custom 추가
+  (back-to-top, $primary-color) // back-to-top 추가
+  ;
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
@@ -50,13 +53,22 @@
       @if ($buttoncolor == light-outline) {
         border: 1px solid #fff;
       }
+      @if ($buttoncolor == custom) { // custom 추가
+        border: 1px solid $border-color;
+      }
+      @if ($buttoncolor == back-to-top) { // custom 추가
+        @include yiq-contrasted($border-color);
+        border: 1px solid $border-color;
+        border-radius: 50%;
+      }
 
       &:visited {
         @include yiq-contrasted($color);
       }
 
       &:hover {
-        @include yiq-contrasted(mix(#000, $color, 20%));
+        // @include yiq-contrasted(mix(#000, $color, 20%));
+        @include yiq-contrasted($color);
       }
     }
   }
