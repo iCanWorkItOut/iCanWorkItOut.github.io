@@ -18,6 +18,21 @@
   }
 }
 
+.archive__home-title { // home(index) main title
+  margin: 0 0 0.5em;
+  font-size: $type-size-3;
+  color: $text-color;
+  line-height: 1;
+}
+
+.archive__home-subtitle { // home(index) subtitle
+  margin: 0 0 1.25em;
+  padding: 0 0 0.5em;
+  font-size: $type-size-5;
+  color: $muted-text-color;
+  border-bottom: 1px solid $border-color;
+}
+
 .archive__item {
   position: relative;
 
