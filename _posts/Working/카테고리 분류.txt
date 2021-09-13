@@ -1,0 +1,9 @@
+Web : Web, HTML/XML, CSS/SCSS
+Java : Java/Spring, JPA, JDBC/Mybatis, Thymeleaf, Servlet/JSP
+JavaScript : JavaScript, TypeScript, Node.js, React, AJAX/JSON
+Database : Oracle, MySQL
+Server : Linux, AWS
+CS : Programming, Data structure, Network, OS
+Coding : Coding test, Toy project
+IDE/Tools : IntelliJ, VS Code, eclipse
+etc. : Blog, How to
