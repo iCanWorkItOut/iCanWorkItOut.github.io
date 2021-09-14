@@ -29,15 +29,18 @@
       </div>
     {% endif %}
 
-    <div id="footer" class="page__footer">
+    <div id="page-footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
         {% include_cached footer.html %}
       </footer>
     </div>
 
-    <aside class="sidebar__right--back-to-top">
-      <a href="#"><i class="btn--back-to-top fas fa-arrow-circle-up fa-2x"></i></a>
+    <aside class="sidebar__right--mov-to-top">
+      <a href="#"><i class="btn--mov-top-bottom fas fa-arrow-circle-up fa-2x"></i></a>
+    </aside>
+    <aside class="sidebar__right--mov-to-bottom">
+      <a href="#page-footer"><i class="btn--mov-top-bottom fas fa-arrow-circle-down fa-2x"></i></a>
     </aside>
 
     {% include scripts.html %}

@@ -110,7 +110,14 @@
   }
 }
 
-.sidebar__right--back-to-top {
+.sidebar__right--mov-to-top {
+  position: fixed;
+  bottom: 4em;
+  right: 1.5em;
+  z-index: 10;
+}
+
+.sidebar__right--mov-to-bottom {
   position: fixed;
   bottom: 1.5em;
   right: 1.5em;
@@ -216,7 +223,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -350,4 +357,3 @@
     margin-right: initial;
   }
 }
-
