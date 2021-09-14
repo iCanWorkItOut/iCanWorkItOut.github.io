@@ -5,5 +5,6 @@ layout: category
 sidebar_main: true
 ---
 
+Web & Front-end
 {% assign posts = site.categories.Web %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% for post in posts %} {% include archive-custom.html type=page.entries_layout %} {% endfor %}
