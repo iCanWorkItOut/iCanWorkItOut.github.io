@@ -1,6 +1,6 @@
 ---
 title: "HTML/XML"
-permalink: /categories/markup_language
+permalink: /categories/html-xml
 layout: category
 sidebar_main: true
 ---
