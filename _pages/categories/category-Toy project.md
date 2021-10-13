@@ -1,10 +1,10 @@
 ---
-title: "Front-end"
-permalink: /categories/html-xml
+title: "Coding"
+permalink: /categories/toy-project
 layout: category
 sidebar_main: true
 ---
 
-about HTML / XML
-{% assign posts = site.categories.['HTML/XML'] %}
+about Toy Project
+{% assign posts = site.categories.['Toy project'] %}
 {% for post in posts %} {% include archive-custom.html type=page.entries_layout %} {% endfor %}

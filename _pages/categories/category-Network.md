@@ -1,10 +1,10 @@
 ---
-title: "Front-end"
-permalink: /categories/html-xml
+title: "Computer Science"
+permalink: /categories/network
 layout: category
 sidebar_main: true
 ---
 
-about HTML / XML
-{% assign posts = site.categories.['HTML/XML'] %}
+about Network
+{% assign posts = site.categories.Network %}
 {% for post in posts %} {% include archive-custom.html type=page.entries_layout %} {% endfor %}
